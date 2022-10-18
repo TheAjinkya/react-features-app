@@ -9,6 +9,7 @@ import UseReducerObjectComp from './components/UseReducerComp/UseReducerObjectCo
 import React, { useReducer } from 'react';
 import ComponentA from './components/useReducerWithUseContext/componentA';
 import UseReducerForAxios from './components/UseReducerForAxios';
+import ComponentOne from './components/CustomHooks/ComponentOne';
 
 const initialCount = {
   firstCounter: 0,
@@ -39,6 +40,12 @@ function App() {
 
   return (
     <div className="App">
+
+      Custom Hooks: ComponentOne <br/>
+      <ComponentOne/>
+     
+      -------      -------      -------      -------      -------      -------      -------      -------
+      <hr/>
       UseReducer for Axios : <br/>
       <UseReducerForAxios/>
       <hr/>
