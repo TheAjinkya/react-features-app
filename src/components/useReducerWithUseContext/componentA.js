@@ -1,5 +1,5 @@
 import React, { useContext }  from "react";
-import { countContext } from "../../App";
+import { countContext } from "../../App2";
 import ComponentB from "../useReducerWithUseContext/componentB";
 
 function ComponentA() {

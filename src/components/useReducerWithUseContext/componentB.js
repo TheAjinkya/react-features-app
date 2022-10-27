@@ -1,5 +1,5 @@
 import { React, useContext } from "react";
-import { countContext } from "../../App";
+import { countContext } from "../../App2";
 import ComponentA, { ChannelContext, UserContext } from "./componentA";
 import ComponentC from "./ComponentC";
 
