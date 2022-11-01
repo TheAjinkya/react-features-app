@@ -18,10 +18,17 @@ function UseEffectApp() {
     });
     console.log(count);
     console.log("increment isDisabled", isDisabled);
+
+    callThisFunction()
+    
     return () => {
     window.removeEventListener("click")    
     };
   }, [id]);
+
+  const callThisFunction = ()=>{
+
+  }
 
   const increment = () => {
     setCount((prevCount) => prevCount + 1);

@@ -5,6 +5,9 @@ import CompX from './dashboard/serviceContext/compX';
 import React from 'react';
 import CounterReducerApp from './dashboard/serviceReducer/counterReducerApp';
 import GetDataFromUseReducer from './dashboard/serivceUseReducerEffect/getDataFromUseReducer';
+import LoginForm from './dashboard/serviceForm/loginForm';
+import Parent from './dashboard/servicePureComponent/Parent';
+import Counter from './dashboard/serviceHOC/Counter';
 
 
 const user = {
@@ -22,6 +25,12 @@ function App() {
       <CounterReducerApp/>
       <hr/>
       <GetDataFromUseReducer/>
+      <hr/>
+      <LoginForm/>
+      <hr/>
+      <Parent/>
+      <hr/>
+      <Counter/>
       </div>
   );
 }
