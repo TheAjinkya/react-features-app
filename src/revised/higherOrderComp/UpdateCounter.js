@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-const UpdateCounter = orgionalComp =>{
+const UpdateCounter = OrgionalComp =>{
 
     class NewComponent extends Component {
 
@@ -20,7 +20,7 @@ const UpdateCounter = orgionalComp =>{
         }
     
         render() {
-            return (<orgionalComp count={this.state.count} increment={this.increment}/>)
+            return (<OrgionalComp count={this.state.count} increment={this.increment}/>)
         }
     }
     return NewComponent

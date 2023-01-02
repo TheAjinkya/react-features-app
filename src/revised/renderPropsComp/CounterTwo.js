@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import ReducerApp from './ReducerApp';
-import UpdateCounter from './UpdateCounter';
 
-class Counter extends Component {
+class CounterTwo extends Component {
 
     render() {
         const {count, increment, decrement} = this.props
@@ -13,5 +11,4 @@ class Counter extends Component {
         </div>)
     }
 }
-
-export default UpdateCounter(Counter);
+export default CounterTwo;

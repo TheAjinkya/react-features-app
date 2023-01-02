@@ -1,27 +1,15 @@
 import React, { Component } from 'react'
+import UpdateCounter from './UpdateCounter';
 
 class KeyPressApp extends Component {
 
-    constructor(props) {
-        super();
-        this.state = {
-            count :0 
-        }
-    }
-    increment = ()=>{
-        this.setState(prevState=>(
-        {
-            count : prevState.count + 1
-        }
-        ))
-    }
-
     render() {
+        const {count, increment} = this.props
         return (<div>
-            Counter Comp: {this.state.count} <br />
-            <button onDoubleClick={this.increment}>onDoubleClick</button>
+            Counter Comp: {count} <br />
+            <button onDoubleClick={increment}>onDoubleClick</button>
         </div>)
     }
 }
 
-export default KeyPressApp;
+export default UpdateCounter(KeyPressApp);
