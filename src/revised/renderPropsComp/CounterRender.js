@@ -28,7 +28,7 @@ class CounterRender extends Component {
     render() {
         return (
         <div>
-            {this.props.name(this.state.count, this.decrement, this.increment)}
+            {this.props.render(this.state.count, this.increment)}
         </div>
         )
     }
